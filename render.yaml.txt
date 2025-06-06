@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: api-etiquetas
+    env: python
+    buildCommand: ""
+    startCommand: python etiqueta_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    plan: free
